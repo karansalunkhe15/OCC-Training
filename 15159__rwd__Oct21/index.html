@@ -1,0 +1,631 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pages - Mastekeer Details</title>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="/css/style.css" />
+    <script src="/js/app.js"></script>
+  </head>
+  <body>
+    <!--================== side navbar start ==================-->
+  <div class="container-fluid">
+    <div class="row">
+       
+  <div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="#">Application</a>
+  <a href="#">Corporate Function</a>
+  <a href="#">Colabration Portal</a>
+  <a href="#">External Link</a>
+   <a href="#">About Mastek</a>
+    <a href="#">Support</a>
+</div>
+    </div>
+  </div> 
+    <!--================== side navbar end ==================-->
+
+    <!--================== first navbar start ==================-->
+    <div class="container">
+      <div class="row">
+       <span style="font-size:30px;cursor:pointer" id="burgerM" onclick="openNav()">&#9776; </span>
+        <div class="col-2 img_logo pt-1">
+          <a href="#"
+            ><img src="/images/masteklogo.png" id="img1" alt="logo"
+          /></a>
+        </div>
+        <div class="col-5 pt-1">
+          <div class="input-group">
+            <input type="text" class="form-control" placeholder="Search" />
+            <div class="input-group-append">
+              <button class="btn"><i class="fa fa-search"></i></button>
+            </div>
+          </div>
+        </div>
+        <div class="col-2" style="margin-top: 10px">
+          <div class="icons">
+            <span><a href="#"><i class="fa fa-bell-o"></i></a><a href="#"><i class="fa fa-calendar mr-2"></i
+              ></a><a href="#"><i class="fa fa-flag"></i></a></i></span>
+          </div>
+        </div>
+        <div class="col-2 user" style="margin-top: 10px">
+          <p id="para"><span class="fa fa-user"></span>Hi, Karan <span class="fa fa-caret-down "></span ></p>
+            <span class="fa fa-ellipsis-v " id="ellips"></span>
+        </div>
+      </div>
+    </div> 
+    <!--==================  first navbar end ==================-->
+
+    <!--================== sencond navbar strat ==================-->
+     <div class="container" >
+      <div class="row">
+        <div class="col">
+          <nav>
+              <div class="btn-group">
+                <button
+                  type="button"
+                  class="btn btn-outline-secondary dropdown-toggle"
+                  data-toggle="dropdown"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                >
+                  Application
+                </button>
+                <div class="dropdown-menu">
+                  <a class="dropdown-item" href="#">Action</a>
+                  <a class="dropdown-item" href="#">Another action</a>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="#">Separated link</a>
+                </div>
+              </div>
+
+              <div class="btn-group">
+                <button
+                  type="button"
+                  class="btn btn-outline-secondary dropdown-toggle"
+                  data-toggle="dropdown"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                >
+                  Corporate Functions
+                </button>
+                <div class="dropdown-menu">
+                  <a class="dropdown-item" href="#">Action</a>
+                  <a class="dropdown-item" href="#">Another action</a>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="#">Separated link</a>
+                </div>
+              </div>
+
+              <div class="btn-group">
+                <button
+                  type="button"
+                  class="btn btn-outline-secondary dropdown-toggle"
+                  data-toggle="dropdown"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                >
+                  Collabration portal
+                </button>
+                <div class="dropdown-menu">
+                  <a class="dropdown-item" href="#">Action</a>
+                  <a class="dropdown-item" href="#">Another action</a>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="#">Separated link</a>
+                </div>
+              </div>
+
+              <div class="btn-group">
+                <button
+                  type="button"
+                  class="btn btn-outline-secondary dropdown-toggle"
+                  data-toggle="dropdown"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                >
+                  External Links
+                </button>
+                <div class="dropdown-menu">
+                  <a class="dropdown-item" href="#">Action</a>
+                  <a class="dropdown-item" href="#">Another action</a>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="#">Separated link</a>
+                </div>
+              </div>
+
+              <div class="btn-group">
+                <button
+                  type="button"
+                  class="btn btn-outline-secondary dropdown-toggle"
+                  data-toggle="dropdown"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                >
+                  About Mastek
+                </button>
+                <div class="dropdown-menu">
+                  <a class="dropdown-item" href="#">Action</a>
+                  <a class="dropdown-item" href="#">Another action</a>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="#">Separated link</a>
+                </div>
+              </div>
+
+              <div class="btn-group">
+                <button
+                  type="button"
+                  class="btn btn-outline-secondary dropdown-toggle"
+                  data-toggle="dropdown"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                >
+                  Support
+                </button>
+                <div class="dropdown-menu">
+                  <a class="dropdown-item" href="#">Action</a>
+                  <a class="dropdown-item" href="#">Another action</a>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="#">Separated link</a>
+                </div>
+              </div>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </div> 
+
+    <!--================== second navbar end ==================-->
+
+    <!--================== profile start    ==================-->
+    <div class="container-fluid cf-1">
+      <div class="container-fluid">
+        <div class="profile"><span>My Profile</span></div>
+      </div>
+      <!--================== profile end    ==================-->
+
+      <!--================== Alert Start    ==================-->
+
+      <div class="container mt-4 c1">
+        <div class="alert alert-info" id="alertConsent">
+          <label for="alertConsent">
+            <input type="checkbox" checked />
+            By selecting the checkbox for personal information consent, you have
+            agreed to share your personal information with Mastek Ltd. Read
+            disclaimer given below.</label
+          >
+        </div>
+      </div>
+      <!--================== Alert end    ==================-->
+
+      <!--================== skill button start    ==================-->
+
+      <div class="container">
+        <button class="float-right" id="btn">
+          <a href="#"><i class="fa fa-file-o pr-1"></i>My Skills</a>
+        </button>
+      </div>
+      <div style="clear: both"></div>
+
+      <!--================== skill button end    ==================-->
+
+      <!--==================  container start    ==================-->
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4">
+            <div
+              class="card"
+              style="
+                height: 500px;
+                padding-bottom: 27%;
+                margin-top: 20%;
+                position: relative;
+              "
+            >
+              <div
+                class="text-center profile-dp"
+                style="position: absolute; bottom: 90%"
+              >
+                <img
+                  class=""
+                  id="img"
+                  src="images/profileimage.jpg"
+                  style="border-radius: 50%"
+                  height="100px"
+                  width="100px"
+                />
+              </div>
+              <div class="card-body mt-5">
+                <h3 class="card-title text-center">Karan Salunkhe</h3>
+                <div class="text-center" style="color: rgb(153, 152, 152)">
+                  <small>Software Engineer</small>
+                </div>
+                <div class="m-2">
+                  <span><i class="fa fa-envelope"></i></span>
+                  Karan.Salunkhe@mastek.com
+                </div>
+                <div class="m-2 phone">
+                  <span><i class="fa fa-phone"></i></span>
+                  <span class="float-right"><i class="fa fa-pencil"></i></span>
+                </div>
+                <div class="m-2 phone">
+                  <i class="fa fa-mobile"></i>
+                  <span class="float-right"><i class="fa fa-pencil"></i></span>
+                </div>
+                <div class="mt-5"><i class="fa fa-user"></i> About Me</div>
+                <div class="m-2 phone">
+                  <i class="fa fa-user"></i>
+                  <span class="float-right"><i class="fa fa-pencil"></i></span>
+                </div>
+                <div class="m-2 mt-5 phone">
+                  <i class="fa fa-graduation-cap"></i>
+                  <span class="float-right"
+                    ><i class="fa fa-plus-circle"></i
+                  ></span>
+                </div>
+
+                <div class="m-2 mt-5 phone">
+                  <i class="fa fa-certificate">Mandatory training</i>
+                  <span class="float-right"
+                    ><i class="fa fa-plus-circle"></i
+                  ></span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div
+              class="card"
+              style="height: 500px; margin-top: 20%; position: relative"
+            >
+              <div class="card-body">
+                <span>
+                  <i
+                    style="font-size: 25px"
+                    class="fa fa-id-card-o"
+                    aria-hidden="true"
+                  >
+                    <h5
+                      class="text-center float-right pl-2"
+                      style="color: lightslategrey"
+                    >
+                      Employment Details
+                    </h5>
+                  </i>
+                </span>
+                <hr />
+                <div class="second">
+                  <div class="mb-1">
+                    <small class="q1">Employee No</small><br />
+                    <small>15159</small><br />
+                  </div>
+                  <div class="mb-1">
+                    <small class="q1">Service Line</small><br />
+                    <small>SL_Application Development</small><br />
+                  </div>
+                  <div class="mb-1">
+                    <small class="q1">Unit</small><br />
+                    <small>SL - Application Development</small><br />
+                  </div>
+                  <div class="mb-1">
+                    <small class="q1">Cost Center</small><br />
+                    <small>Talent Pool- Application Development-Off</small
+                    ><br />
+                  </div>
+                  <div class="mb-1">
+                    <small class="q1">Area</small><br />
+                    <small>Mumbai</small><br />
+                  </div>
+                  <div class="mb-1">
+                    <small class="q1">Sub Area</small><br />
+                    <small>Mahape</small><br />
+                  </div>
+                  <div class="mb-1">
+                    <small class="q1">Grade</small><br />
+                    <small>G4</small>
+                    <div class="mb-1">
+                      <small class="q1">Unit HR</small><br />
+                      <div class="mb-1">
+                        <small class="q1">Date of Joining</small><br />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div
+              class="card"
+              style="height: 500px; margin-top: 20%; position: relative"
+            >
+              <div class="card-body">
+                <span>
+                  <i
+                    style="font-size: 25px"
+                    class="fa fa-sitemap"
+                    aria-hidden="true"
+                  >
+                    <h5
+                      class="text-center float-right pl-2"
+                      style="color: lightslategrey"
+                    >
+                      Oragnization
+                    </h5>
+                  </i>
+                </span>
+                <hr />
+                <div class="third">
+                  <div class="mb-2">
+                    <img
+                      src="images/profileimage.jpg"
+                      id="orag_imgs"
+                      height="30px"
+                      width="30px"
+                    />
+                    <small class="q1">Ashank Desai</small><br />
+                  </div>
+                  <div class="mb-2">
+                    <img
+                      src="images/profileimage.jpg"
+                      id="orag_imgs"
+                      height="30px"
+                      width="30px"
+                    />
+                    <small class="q1">Hiral Chandrana</small><br />
+                  </div>
+                  <div class="mb-2">
+                    <img
+                      src="images/profileimage.jpg"
+                      id="orag_imgs"
+                      height="30px"
+                      width="30px"
+                    />
+                    <small class="q1">Narasimha Murthy</small><br />
+                  </div>
+                  <div class="mb-2">
+                    <img
+                      src="images/profileimage.jpg"
+                      id="orag_imgs"
+                      height="30px"
+                      width="30px"
+                    />
+                    <small class="q1">Hiren R Shah</small><br />
+                  </div>
+                  <div class="mb-2">
+                    <img
+                      src="images/profileimage.jpg"
+                      id="orag_imgs"
+                      height="30px"
+                      width="30px"
+                    />
+                    <small class="q1">Mithun Shenoy</small><br />
+                  </div>
+                  <div class="mb-2">
+                    <img
+                      src="images/profileimage.jpg"
+                      id="orag_imgs"
+                      height="30px"
+                      width="30px"
+                    />
+                    <small class="q1">Kuldeep Sidhu</small><br />
+                  </div>
+                  <div class="mb-2">
+                    <img
+                      src="images/profileimage.jpg"
+                      id="orag_imgs"
+                      height="30px"
+                      width="30px"
+                    />
+                    <small class="q1">Karan Salunkhe</small><br />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--==================  first container end    ==================-->
+
+      <!--==================  second container start    ==================-->
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4">
+            <div
+              class="card"
+              style="
+                height: 400px;
+                padding-bottom: 27%;
+                margin-top: 20%;
+                position: relative;
+              "
+            >
+              <div class="card-body">
+                <span>
+                  <i
+                    style="font-size: 25px"
+                    class="fa fa-info-circle"
+                    aria-hidden="true"
+                  >
+                    <h5
+                      class="text-center float-right pl-2"
+                      style="color: lightslategrey"
+                    >
+                      Personal Information
+                    </h5>
+                  </i>
+                </span>
+                <hr />
+                <div class="mb-1">
+                  <small class="q1">Gender</small><br />
+                  <small>Male</small><br />
+                </div>
+                <div class="mb-1">
+                  <small class="q1">Birthday</small><br />
+                  <small>3 October</small><br />
+                </div>
+
+                <div class="mb-1">
+                  <small class="q1">Others Details</small><br />
+                  <ul>
+                    <li>Passport / Visa Details</li>
+                    <li>Family Details</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div
+              class="card"
+              style="height: 400px; margin-top: 20%; position: relative"
+            >
+              <div class="card-body">
+                <span>
+                  <i
+                    style="font-size: 25px"
+                    class="fa fa-phone-square"
+                    aria-hidden="true"
+                  >
+                    <h5
+                      class="text-center float-right pl-2"
+                      style="color: lightslategrey"
+                    >
+                      Contact Information
+                    </h5>
+                  </i>
+                </span>
+                <hr />
+
+                <div
+                  style="border: 1px dotted black; width: 80%px; height: 150px"
+                >
+                  <small class="q1">Personal Email Id</small><br />
+
+                  <span
+                    >karansalunkhe15@gmail.com<i class="fa fa-pencil"></i
+                  ></span>
+                  <hr />
+                  <small class="q1">Confirmation key</small><br />
+                  <span class="float-right"><i class="fa fa-pencil"></i></span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div
+              class="card"
+              style="height: 400px; margin-top: 20%; position: relative"
+            >
+              <div class="card-body">
+                <span>
+                  <i
+                    style="font-size: 25px"
+                    class="fa fa-ambulance"
+                    aria-hidden="true"
+                  >
+                    <h5
+                      class="text-center float-right pl-2"
+                      style="color: lightslategrey"
+                    >
+                      Emergency Details
+                    </h5>
+                  </i>
+                </span>
+                <hr />
+                <small class="q1">Blood input-group-append</small><br />
+
+                <span>B+<i class="fa fa-pencil"></i></span>
+                <hr />
+                <small class="q1">Emergency Cotact No</small><br />
+                <span class="float-right"><i class="fa fa-pencil"></i></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!--==================  second container start    ==================-->
+
+      <!--==================  description content  start  ==================-->
+      <div class="container mt-4">
+        <div class="warning_msg p-3">
+          <p>
+            <strong>Disclaimer</strong> : Your privacy is important to us.
+            Mastek uses the personal data provided by you on this form for the
+            organizations internal processing requirement as part your
+            employment. We will use your data for the organizations
+            communication and notification. We will share your data with Mastek
+            controlled affiliates and subsidiaries; with vendors working on our
+            behalf; when required by law or to respond to legal process; to
+            protect our customers ; to protect lives; to maintain the security
+            of our services; and to protect the right of property or Mastek.
+            Mastek is committed to protecting the security of your personal
+            data. Mastek requests you to inform us about any changes to your
+            personal data via an email to your respective Human Resource
+            personal or by sending an email to PIIdatamodification@mastek.com .
+          </p>
+        </div>
+      </div>
+
+      <!--==================  description content  end  ==================-->
+
+      <!-- ===============img img_resize start ===================-->
+      <div class="container mt-2 mb-0">
+        <div class="row">
+          <div class="col">
+            <img src="/images/Hackathon_WInner_1348x210_22_Nov_2021.jpg" id="img_resize" alt="banner">
+          </div>
+        </div>
+        
+      </div>
+      <!-- =============== banner img img_resize end ===================-->
+
+    </div>
+
+    <!--==================  footer start  ==================-->
+    <footer class="footer ">
+      <div class="container-fluid">
+        <div>
+          <span
+            >&copy; copyright 2016 - 2021. All rights reserved | Privacy
+            Notice</span
+          >
+        </div>
+      </div>
+    </footer>
+
+    <!--==================  footer end  ==================-->
+  </body>
+</html>
